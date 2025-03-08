@@ -91,14 +91,14 @@
           document.getElementById("btnClose").style.display = "none";
         }
       }
-
+      var globalUserid
       async function sendFlexMessage() {
         try {
           if (!globalUserid) {
             const profile = await liff.getProfile();
             globalUserid = profile.userId;
           }
-          const uri = "https://tx00cr77-3002.asse.devtunnels.ms/";
+          const uri = "https://tx00cr77-3001.asse.devtunnels.ms/";
           const response = await fetch(
             `${uri}/api/v1/sendflexmessage/${globalUserid}`,
             {
