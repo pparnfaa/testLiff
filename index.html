@@ -112,10 +112,10 @@
             throw new Error(`HTTP error! Status: ${response.status}`);
           }
           const result = await response.json();
-          console.log("สงขอความสาเรจ:", result);
+          console.log("ส่งข้อความสำเร็จ:", result);
           return result;
         } catch (error) {
-          console.error("เกดขอผดพลาดในการสงขอความ:", error);
+          console.error("เกิดข้อผิดพลาดในการส่งข้อความ:", error);
         }
       }
 
