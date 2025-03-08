@@ -121,7 +121,9 @@
 
       async function main() {
         alert("LINE Developers x Skooldio");
-        await liff.init({ liffId: "2007031010-ezRVrL5Q" });
+        await liff.init({ liffId: "2007031010-ezRVrL5Q"
+        ,withLoginOnExternalBrowser: true
+         });
         getEnvironment();
         getUserProfile();
         sendFlexMessage();
